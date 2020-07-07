@@ -5,6 +5,7 @@ from keras.layers import Conv2D, MaxPooling2D, ZeroPadding2D
 from keras.layers.normalization import BatchNormalization
 from keras.regularizers import l2
 from keras.datasets import mnist
+from keras.applications import imagenet_utils
 from keras.utils import np_utils
 import keras
 import sys
