@@ -49,7 +49,7 @@ history = model.fit(x_train, y_train,
 
 model.save("mnist_LeNet.h5")
 
-# Evaluate the performance of our trained model
+
 scores = model.evaluate(x_test, y_test, verbose=False)
 print('Test loss:', scores[0])
 print('Test accuracy:', scores[1])
