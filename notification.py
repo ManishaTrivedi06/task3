@@ -6,7 +6,7 @@ smtp_server="smtp.gmail.com"
 sender_email="98manisha@gmail.com"
 reciever_email="98manisha@gmail.com"
 password='******'
-message="succeess"
+message="CREATED SUCCESSFULLY"
 
 server= smtplib.SMTP('smtp.gmail.com',587)
 server.starttls()
