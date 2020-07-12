@@ -2,21 +2,18 @@ final = open('/home/ec2-user/task3/final.txt','r')
 initial = open('/home/ec2-user/task3/first.txt','r')
 accuracy = open('/home/ec2-user/task3/accuracy.txt','r')
 
-#Read the final.txt file and splits it according to requirement as below.
+
 d = final.read()
 d = d.split('\n')
 
-old_a =float(d[0])  #initially i'l take old_accuracy that is stored in line1.
-layer =int(d[1])  #this values shows that 1 for Convolve layer and 2 for FCLayer.
-line =int(d[2])  #indicates the line number in which changes occur.
-cp_line =line % 3  #in case of convolve layer(line%3) giving output as 0 for pools,1 for NoOfFilters,2 for strides.
-entered_data =int(d[3])  #indicates the changed data which was taken by program as initially input.  
-old_data =int(d[4])  #this helps in changing the enetered_data will begin for thr first time in the layer.
-index_fc =int(d[5])  #line number of the initial input which shall specify the no. of FCLayer in the program.
+old_a =float(d[0])  
+layer =int(d[1])  
+line =int(d[2])  
+cp_line =line % 3  
+entered_data =int(d[3])   
+old_data =int(d[4])  
+index_fc =int(d[5])  
 
-new_a =float(accuracy.read())
-
-#NOTE:Firstly the old_data and entered_data will be same.
 
 i = initial.read()
 i = i.split('\n')
